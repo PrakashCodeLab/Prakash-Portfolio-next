@@ -1,0 +1,88 @@
+@import '/styles/variables//variable.scss';
+
+.contact__section__body{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items:center;
+   .contact__section__wrapper {
+         width: 100%;
+       
+         height: auto;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         padding: 60px 20px;
+        
+        @include  max-screen($medium){
+              flex-direction: column;
+              gap: 3rem;
+        }
+
+     
+
+      .contact__logo{
+        width: 70px;
+        height: 70px;
+
+        .contact__img__logo{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            @include radius(50%);
+            cursor: pointer; 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+              
+        }
+
+
+      }  
+
+
+
+      .contact__heading{
+        h2{
+            @include subHeading;
+
+            text-transform: capitalize;
+         
+            
+        }
+      }
+
+      .contact__email__section{
+           background-color: #27ae60;
+           width: 200px;
+           height: 60px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           font-family: $heading-font-two;
+            border-radius: 10px;
+            display: block;
+
+         &:hover{
+          background-position: right center; /* change the direction of the change here */
+          color: #fff;
+          text-decoration: none;
+          box-shadow: 0 0 20px #eee;
+         }
+
+         .contact__link__btn{
+             width: 100%;
+             height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #f6f2f6d3;
+            text-transform:capitalize;
+         }
+      }
+   }
+}
+

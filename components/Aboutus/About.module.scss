@@ -1,0 +1,55 @@
+@import '/styles/variables/variable.scss';
+
+
+.technology__aboutme__section {
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+    h2.about__heading {
+    align-self: first baseline;
+     
+      margin-bottom:1rem;
+      @include headingColor;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+    
+    .aboutme__lead{
+      @include  subHeading;
+      margin-bottom: 8px;
+    }
+
+    .aboutme__text{
+      align-self: first baseline;
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.5rem;
+      text-transform: none;
+      text-align: justify;
+      font-weight: 200;
+      padding: 1rem;
+      width: 100%;
+      max-width:1280px;
+      font-family: $paragraph-font-two;
+
+      @include max-screen($medium){
+             font-size: 1.1rem;
+             line-height: 2.3rem;
+              
+      }
+
+      .strong__tech{
+        color: color(color-text-secondary);
+        font-size: 1.5rem;
+        font-family: $heading-font-two;
+      }
+
+
+    }
+  }
+  

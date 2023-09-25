@@ -1,0 +1,44 @@
+@import '/styles/variables/variable.scss';
+
+
+.line__section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.line {
+  height: 0.29rem;
+  @include radius(0.4rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  background: #dd0833;
+  background: linear-gradient(to right, #062ef7, #dc0a34);
+
+
+}
+
+.heading {
+  position: relative;
+  z-index: 1;
+}
+
+.heading__name {
+  font-size: 1.5rem;
+  margin-top: 0.4rem;
+  color: #e63946ff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-self: first baseline;
+  font-family: $heading-font-two;
+  letter-spacing: 0.05rem;
+  font-style: oblique;
+
+  @include max-screen($Small) {
+    font-size: 1.2rem;
+  }
+
+}

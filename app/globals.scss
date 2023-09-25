@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import '../styles/variables/variable.scss';
+
+
+
+$color-dark-primary:#0b132b;
+$color-dark-text-primary: #fff;
+$bg-light-primary:#fff2cc;
+$color-text-light:#020c1b;
+
+/*
+$red-pantone: #e63946ff;
+$honeydew: #f1faeeff;
+$non-photo-blue: #a8dadcff;
+$cerulean: #457b9dff;
+$berkeley-blue: #1d3557ff;
+
+#f5e1ff
+#c2e2f2
+*/
+
+.dark{
+  background-color: $color-dark-primary;
+  color:  $color-dark-text-primary;
+ } 
+
+ .light{
+  background-color: $bg-light-primary;
+  color:$color-text-light;
+ }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  position: relative;
+  overflow-x: hidden;
+ 
+}
+
+
+
+.body__overflow{
+  overflow-y: hidden;
+}
+
+
+.scrolled{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+ 
+  animation: scroll 0.7s ease-in;
+
+} 
+
+@keyframes scroll {
+  0% {
+      transform: translateY(-100px);
+
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.close__nav{
+  display: none;
+}
+
+.body__container {
+  width: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+   max-width: 1400px;
+
+   margin: 0 auto;
+   display: grid;
+   place-items: center;
+}
+
+
+
+
+.main__body__container{
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* For Webkit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #020c1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color of the thumb */
+  border-radius: 6px; /* Rounder corners for the thumb */
+}
+
+/* For Firefox */
+/* Note: Firefox currently only supports styling the scrollbar color */
+/* To achieve background color change, you can use an addon like "simple-scrollbar" */
+/* Learn more: https://addons.mozilla.org/en-US/firefox/addon/simple-scrollbar/ */
+
+
+

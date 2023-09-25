@@ -1,0 +1,36 @@
+@import '/styles/variables/variable.scss';
+
+.footer__body__section{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+     
+  
+    font-family: $navabr-font;
+   .footer__section__wrapper{
+    width: 100%;
+    height: auto;
+     background-color:#194fe3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+   
+
+    .footer__lead__content {
+        font-size: 1.9rem;
+        text-transform: capitalize;
+     
+        color:#ffffff; /* Adjust the font size as desired */
+      }
+      
+      .footer__name {
+        border-left: 3px solid rgb(218, 221, 227); /* Add a left border to the name */
+        padding-left: 12px;
+       
+      }
+      
+   }
+
+}

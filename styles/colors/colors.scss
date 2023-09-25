@@ -1,0 +1,28 @@
+$colors: (
+  color-primary: #f9f9f9dd,
+  color-text-base: #000ddd,
+  color-dark-text-base: #64ffda,
+ 
+  color-text-secondary: #05a1e3,
+  color-secondary: #f7eff0dd,
+  color-tenariary: #ffacb7dd,
+  color-accent: #6886c5,
+  color-faded: rgba(255, 255, 255, 0.78),
+  color-dark-primary:#020c1b,
+ bg-navbar:#112240,
+  color-dark-text-primary: #fff,
+  color-dark-secondary: #133b5c,
+  color-dark-tenariary: #1e5f74,
+  color-dark-accent: #fcdab7,
+  bg-light-primary: #e6eaf0,
+  color-text-nav: #333,
+);
+
+
+
+
+
+
+@function color($color-name){
+    @return map-get($colors , $color-name );
+}

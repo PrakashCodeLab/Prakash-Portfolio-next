@@ -1,0 +1,70 @@
+@mixin radius($round) {
+  border-radius: $round;
+  -webkit-border-radius: $round;
+  -moz-border-radius: $round;
+  -ms-border-radius: $round;
+  -o-border-radius: $round;
+}
+
+$mobile-phone:375px;
+$Small : 576px;
+$medium : 768px;
+$Large : 992px;
+$Extra-large: 1280px;
+$xx-large: 1400px;
+
+@mixin max-screen($screen-width) {
+  @media screen and (max-width:$screen-width) {
+    @content;
+  }
+}
+
+@mixin min-screen($screen-width) {
+  @media screen and (min-width:$screen-width) {
+    @content;
+  }
+}
+
+
+
+
+@mixin headingColor {
+  text-transform: capitalize;
+  font-size: 2rem; 
+  font-weight: 700;
+  font-family: $heading-font-two;
+  letter-spacing: $letter-spacing*1;
+  color:#1835C3 ;
+  align-self: first baseline;
+  padding-left: 0.5rem;
+}
+
+@mixin navabr-link {
+  font-size: 1.15rem;
+  font-weight: 700;
+  align-self: first baseline;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  font-family: $navabr-font;
+  font-style: italic;
+  &:hover {
+    /* Set the background gradient */
+        background: linear-gradient(90deg, #F90C10, #D3396F);
+       -webkit-background-clip: text;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+
+  }
+}
+
+@mixin subHeading {
+  align-self: first baseline;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+ 
+  font-weight: 600;
+  color: color(color-dark-tenariary);
+  padding-left: 0.5rem;
+}
