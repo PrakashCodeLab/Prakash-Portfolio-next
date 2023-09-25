@@ -12,9 +12,9 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(undefine
 const getLocalStorage = () => {
   if (typeof window !== "undefined") {
     const value = localStorage.getItem('theme');
-    return value || 'light';
+    return value || 'dark';
   }
-  return 'light'; // Return a default value if window is undefined
+  return 'dark'; // Return a default value if window is undefined
 }
 
 export const ThemecontextProvider = ({ children }: { children: React.ReactNode }) => {
@@ -33,7 +33,7 @@ export const ThemecontextProvider = ({ children }: { children: React.ReactNode }
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme: theme || 'light', toggle }}>
+    <ThemeContext.Provider value={{ theme: theme || 'dark', toggle }}>
       {children}
     </ThemeContext.Provider>
   )
