@@ -137,8 +137,8 @@ const technology :TechDataProps[]= [
 
       tech1: "scss",
       tech2: "react",
-      webLink: "https://prakash-portfolio-delta.vercel.app/",
-      gitLink: "https://github.com/PrakashCodeLab/Prakash-Portfolio-.git",
+      webLink: "https://prakash-portfolio-next.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/Prakash-Portfolio-next.git",
       icon1: Imgsass,
        icon2: Imgnext,
       icon3:Imgtypescript ,
