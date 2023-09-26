@@ -14,7 +14,6 @@
 
     @include max-screen($Large) {
         flex-direction: column;
-       
         min-height: auto;
     }
 
@@ -22,22 +21,42 @@
          padding: 3rem 3rem;
     }
 
+    @include max-screen($mobile-phone){
+        max-width: 100%;
+        min-height: auto; /* Remove the min-height for mobile phones */
+        display: flex; /* Use flex instead of grid for mobile phones */
+        flex-direction: column; /* Set flex-direction to column for mobile phones */
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
     .header__hero__content {
         flex: 1;
         display: flex;
         justify-content: center;
+        
         flex-direction: column;
+         max-width: 600px;
+        @include max-screen($mobile-phone){
+              max-width: 100%;
+              padding: 0.5rem;
+              align-self: first baseline;
+
+        }
 
         @include max-screen($Large) {
             width: 100%;
             margin: 3.5rem 0 0 0;
-
+            align-self: center;
 
         }
 
         @include max-screen($medium) {
            
-           align-self: first baseline;
+           align-self: center;
             padding: 0 2.5rem;
             width: 100%;
 
@@ -51,7 +70,11 @@
             font-family: $heading-font-two;
             text-transform: capitalize;
             letter-spacing: $letter-spacing;
-
+          
+            @include max-screen($mobile-phone){
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
 
 
         }
@@ -67,6 +90,12 @@
             align-self: first baseline;
             text-align: justify;
             font-family: $paragraph-font-one;
+
+            @include max-screen($mobile-phone){
+                font-size: 1rem;
+                line-height: 2em;
+                max-width: 100%;
+            }
 
             @include max-screen($Large) {
                 font-size: 1.1rem;
@@ -141,8 +170,10 @@
         justify-content: center;
         align-items: center;
 
+       
+
         @include max-screen($Large) {
-            width: 100%;
+            max-width: 100%;
 
 
         }
@@ -164,6 +195,11 @@
                 height: 350px;
                 margin: 2.5rem 0 2.5rem 0;
 
+            }
+            @include max-screen($mobile-phone){
+                width: 200px;
+                height: 300px;
+                align-self: first baseline;
             }
 
             &:hover {
@@ -190,6 +226,11 @@
                     left: 8%;
                     top: 6%;
 
+                }
+
+                @include max-screen($mobile-phone){
+                   left: 6%;
+                   right: 6%;
                 }
 
                 &:hover {

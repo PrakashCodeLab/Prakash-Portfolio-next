@@ -43,6 +43,12 @@
               
       }
 
+      @include max-screen($mobile-phone){
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+        
+      }
+
       .strong__tech{
         color: color(color-text-secondary);
         font-size: 1.5rem;

@@ -31,9 +31,6 @@ import Imgnext from '@/public/assets/images/tech/-nextjs-64.png';
 import Imgtailwind from '@/public/assets/images/tech/pngwing.com.png';
 
 
-
-
-
 const ListSection :ListSectionProps[] = [
   { id: 1, link: "/", title: "Home" },
   { id: 1, link: "#about", title: "about" },
@@ -60,8 +57,9 @@ const technology :TechDataProps[]= [
 
 
   const cardData:CardDataProps[]= [
+
     {
-      id: 1343434,
+      id: 1,
       title: "my resume",
       description:
         "Created a responsive and visually appealing resume using HTML, CSS, and JavaScript with Vite, demonstrating proficiency in web development .",
@@ -77,7 +75,22 @@ const technology :TechDataProps[]= [
       icon3: Imgjs,
     },
     {
-      id: 1,
+      id: 2,
+      title: "my portfolio",
+      description:
+        "My personal portfolio website showcases my mastery in crafting responsive web applications with a dark theme using SCSS, Next.js and  Framer Motion.",
+      poster: ProjectImg6,
+
+      tech1: "scss",
+      tech2: "react",
+      webLink: "https://prakash-portfolio-delta.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/Prakash-Portfolio-.git",
+      icon1: Imgsass,
+       icon2: Imgnext,
+      icon3:Imgtypescript ,
+    },
+    {
+      id: 3,
       title: "Famsec website",
       description:
         "Crafted Famsec landing page with Next.js, TypeScript and SCSS demonstrating modern web development expertise. Practice project for skill showcase.",
@@ -93,25 +106,7 @@ const technology :TechDataProps[]= [
       icon3: Imgtypescript,
     },
     {
-      id: 2,
-      title: "nike website",
-      description:
-        "I recreated the nike website using Next.js, TypeScript, SCSS, Tailwind CSS  and framer Motion as a practice project for web development.",
-      poster: projectImg10,
-
-      tech1: "typescript",
-      tech2:'tailwindCss',
-      tech3: "nextjs ",
-      webLink: "https://shoes-nike.vercel.app/",
-      gitLink: "https://github.com/PrakashCodeLab/shoes-nike.git",
-      icon1: Imgnext,
-      icon2: Imgtailwind,
-      
-
-      icon3: Imgtypescript,
-    },
-    {
-      id: 3,
+      id: 4,
       title: "Help scout",
       description:
         "Recreated Help Scout website with Next.js, TypeScript, SCSS, and Tailwind CSS, showcasing web development skills in practice.",
@@ -124,27 +119,28 @@ const technology :TechDataProps[]= [
       gitLink: "https://github.com/PrakashCodeLab/help-scout.git",
       icon1: Imgsass,
       icon2: Imgtailwind,
+      icon3: Imgnext,
+    },
+    {
+      id: 5,
+      title: "tech blog",
+      description:
+        "Tech blog! Built with Next.js , I utilized the efficiency of Sass and Tailwind CSS to bring you concise, cutting-edge content in a sleek and responsive design.",
+      poster: ProjectImg8,
+
+      
+      tech1:'tailwindCss',
+      tech2: "nextjs ",
+      webLink: "https://tech-nextjs-website.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/tech-nextjs-website.git",
+      icon1: Imgsass,
+      icon2: Imgtailwind,
       
 
       icon3: Imgnext,
     },
     {
-      id: 4,
-      title: "my portfolio",
-      description:
-        "My personal portfolio website showcases my mastery in crafting responsive web applications with a dark theme using SCSS, Next.js and  Framer Motion.",
-      poster: ProjectImg6,
-
-      tech1: "scss",
-      tech2: "react",
-      webLink: "https://prakash-portfolio-delta.vercel.app/",
-      gitLink: "https://github.com/PrakashCodeLab/Prakash-Portfolio-.git",
-      icon1: Imgsass,
-       icon2: Imgnext,
-      icon3:Imgtypescript ,
-    },
-    {
-      id: 5,
+      id: 6,
       title: "MovieFlix",
       description:
         "Create a seamless and captivating movie search website, MovieFlix, using Next.js and Tailwind CSS.  movie collection with a search bar powered by the OMDB API  ",
@@ -159,71 +155,7 @@ const technology :TechDataProps[]= [
        icon2:Imgnext,
     },
     {
-      id: 6,
-      title: "Sushi Restaurant",
-      description:
-        "Create a visually stunning and user-friendly website using React, showcasing the menu, services, and a contemporary sushi  japanese restaurant feel the taste",
-      poster: ProjectImg2,
-      tech1: "scss",
-      tech2: "react",
-      webLink: "https://sushiman-website-seven.vercel.app/",
-      gitLink: "https://github.com/PrakashCodeLab/sushiman-website-.git",
-      icon1: Imgsass,
-      icon2: Imgreact,
-    },
-    {
       id: 7,
-      title: "tech blog",
-      description:
-        "Tech blog! Built with Next.js , I utilized the efficiency of Sass and Tailwind CSS to bring you concise, cutting-edge content in a sleek and responsive design.",
-      poster: ProjectImg8,
-
-      tech1: "scss",
-      tech2:'tailwindCss',
-      tech3: "nextjs ",
-      webLink: "https://tech-nextjs-website.vercel.app/",
-      gitLink: "https://github.com/PrakashCodeLab/tech-nextjs-website.git",
-      icon1: Imgsass,
-      icon2: Imgtailwind,
-      
-
-      icon3: Imgnext,
-    },
-   
-    {
-      id: 8,
-      title: "Metaverse nextjs ",
-      description:
-        "Metaverse UI, Designed with Next.js and enhanced by the versatility of Sass and the Tailwind CSS, this project serves as a perfect playground for  Next.js skills ",
-      poster: ProjectImg7,
-
-      tech1: "scss",
-      tech2: "Tailwindcss",
-      tech3:"Next.js",
-      webLink: "https://meta-nextjs-website-i6tejh6pr-prakashcodelab.vercel.app/",
-      gitLink: "https://github.com/PrakashCodeLab/meta-nextjs-website.git",
-      icon1: Imgsass,
-
-      icon2: Imgnext,
-    },
-   
-    {
-      id: 9,
-      title: "GPT3 Chat UI",
-      description:
-        " Develop a responsive website using React to provide users with an interactive and user-friendly interface for engaging in AI-driven conversations powered by GPT-3.",
-      poster: ProjectImg1,
-
-      tech1: "scss",
-      tech2: "react js",
-      webLink: "https://chat-gpt3-website-react.vercel.app/",
-      gitLink: "https://github.com/PrakashCodeLab/chat-gpt3-website-react.git",
-      icon1:Imgsass,
-      icon2:Imgreact,
-    },
-   
-    {
-      id: 10,
       title: "Promising Startup",
       description:
         " Develop a captivating and responsive landing page using HTML, CSS, and JavaScript of the startup company, and driving conversions.",
@@ -237,9 +169,8 @@ const technology :TechDataProps[]= [
       icon2: Imgcss,
       icon3:Imgjs,
     },
-   
     {
-      id: 11,
+      id: 8,
       title: "CineTop100",
       description:
         " Develop a feature-rich movie application  for exploring  cinematic gems ,Rapid API to fetch movie data, providing users with comprehensive details.",
@@ -253,6 +184,78 @@ const technology :TechDataProps[]= [
       icon2: Imgcss,
       icon3: Imgjs,
     },
+    {
+      id: 9,
+      title: "Sushi Restaurant",
+      description:
+        "Create a visually stunning and user-friendly website using React, showcasing the menu, services, and a contemporary sushi  japanese restaurant feel the taste",
+      poster: ProjectImg2,
+      tech1: "scss",
+      tech2: "react",
+      webLink: "https://sushiman-website-seven.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/sushiman-website-.git",
+      icon1: Imgsass,
+      icon2: Imgreact,
+    },
+  
+    {
+      id: 10,
+      title: "nike website",
+      description:
+        "I recreated the nike website using Next.js, TypeScript, SCSS, Tailwind CSS  and framer Motion as a practice project for web development.",
+      poster: projectImg10,
+
+      tech1:'tailwindCss',
+      tech2: "nextjs ",
+      webLink: "https://shoes-nike.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/shoes-nike.git",
+      icon1: Imgnext,
+      icon2: Imgtailwind,
+      
+
+      icon3: Imgtypescript,
+    },
+   
+   
+  
+  
+  
+   
+    {
+      id:11,
+      title: "Metaverse nextjs ",
+      description:
+        "Metaverse UI, Designed with Next.js and enhanced by the versatility of Sass and the Tailwind CSS, this project serves as a perfect playground for  Next.js skills ",
+      poster: ProjectImg7,
+
+      tech1: "scss",
+     
+      tech2:"Next.js",
+      webLink: "https://meta-nextjs-website-i6tejh6pr-prakashcodelab.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/meta-nextjs-website.git",
+      icon1: Imgsass,
+
+      icon2: Imgnext,
+    },
+   
+    {
+      id: 12,
+      title: "GPT3 Chat UI",
+      description:
+        " Develop a responsive website using React to provide users with an interactive and user-friendly interface for engaging in AI-driven conversations powered by GPT-3.",
+      poster: ProjectImg1,
+
+      tech1: "scss",
+      tech2: "react js",
+      webLink: "https://chat-gpt3-website-react.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/chat-gpt3-website-react.git",
+      icon1:Imgsass,
+      icon2:Imgreact,
+    },
+   
+   
+   
+   
    
   ];
 

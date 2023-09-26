@@ -14,7 +14,7 @@ const Navbar = () => {
   const theme = useTheme();
 
   const [nav, setNav] = useState(false);
-   const [navScroll , setNavScroll] = useState(false);
+   
  
  
    const HandleChange = () => {
@@ -37,24 +37,18 @@ const Navbar = () => {
      
      }
 
-     const handleScroll =()=>{
-        if(window.scrollY > 0){
-              setNavScroll(true);
-        }else{
-          setNavScroll(false);
-        }
-     }
+ 
 
-   window.addEventListener('scroll', handleScroll);  
+   
      return()=>{
       Body?.classList.remove('body__overflow');
-       window.removeEventListener('scroll', handleScroll);
+      
      }
   },[nav])     
   
 
   return (
-    <header className={`${Styles.header__container} ${navScroll?'scrolled ':''}`}>
+    <header className={`${Styles.header__container}`}>
     <motion.nav
     initial="hidden"
     animate='show'

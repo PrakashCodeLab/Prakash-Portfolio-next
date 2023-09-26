@@ -27,6 +27,13 @@
         font-size: 1.3rem;
       }
 
+      
+      @include max-screen($mobile-phone){
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+        
+      }
+
     }
 
     .technology__known__section {

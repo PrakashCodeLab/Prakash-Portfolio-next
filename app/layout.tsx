@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html  lang="en">
-      <body className='dark relative body'>
+      <body className=' body'>
         
         
       <ThemecontextProvider>

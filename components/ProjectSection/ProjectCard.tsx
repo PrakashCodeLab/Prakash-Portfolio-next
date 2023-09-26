@@ -19,7 +19,7 @@ const ProjectCard = () => {
         initial="hidden"
         whileInView='show'
         variants={upAnimation}
-          className={`${Styles.project__card__body} ${theme === 'dark'? 'bg-[#0a192f]':''}`}
+          className={`${Styles.project__card__body}  max-sm:w-[280px] ${theme === 'dark'? 'bg-[#0a192f]':''}`}
           key={data.id}
         >
           <div className={Styles.project__img__container}>

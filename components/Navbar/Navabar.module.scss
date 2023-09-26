@@ -6,7 +6,7 @@
    height: 100px;
   display: flex;
  margin: 0% auto;
-   max-width: 1280px;
+   max-width: 1440px;
   justify-content: center;
   align-items: center;
    margin-top: 1.5rem;
@@ -14,7 +14,14 @@
   
    @include max-screen($Large){
     margin-top: 0;
+   
    }
+
+   @include max-screen($mobile-phone){
+    
+    max-width: 100%;
+   }
+
 
 }
 
@@ -31,26 +38,37 @@
     border-radius: 1rem;
     z-index: 100;
 
+    @include max-screen($mobile-phone){
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+       justify-content: space-around;
+       align-items: center;
+    } 
+
     @include max-screen($Large) {
         justify-content: space-between;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         border-radius: 0;
     }
+
+   
 }
 
 
 
-.navabr__logo__section {
+.navabr__logo__section{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .hamburger {
     display: none;
     cursor: pointer;
-
+  
     @include max-screen($Large) {
         display: block;
     }
@@ -80,6 +98,8 @@
 .navbar__hamburger__secttion {
     display: flex;
     gap: 1.5rem;
+
+   
 
 }
 

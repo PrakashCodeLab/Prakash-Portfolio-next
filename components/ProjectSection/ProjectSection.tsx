@@ -10,7 +10,7 @@ const ProjectSection = () => {
   const theme = useTheme();
   return (
     <section id="project"
-      className={`${Styles.project__section} ${
+      className={`${Styles.project__section}  ${
         theme === "light" ? "bg-[#ffd9e6]" : "bg-[#020c1b]"
       }`}
     >

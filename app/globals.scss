@@ -14,16 +14,7 @@ $color-dark-text-primary: #fff;
 $bg-light-primary:#fff2cc;
 $color-text-light:#020c1b;
 
-/*
-$red-pantone: #e63946ff;
-$honeydew: #f1faeeff;
-$non-photo-blue: #a8dadcff;
-$cerulean: #457b9dff;
-$berkeley-blue: #1d3557ff;
 
-#f5e1ff
-#c2e2f2
-*/
 
 .dark{
   background-color: $color-dark-primary;
@@ -40,14 +31,14 @@ $berkeley-blue: #1d3557ff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
+
 }
 
 body {
   width: 100%;
   min-height: 100dvh;
   position: relative;
-  overflow-x: hidden;
+ 
  
 }
 
@@ -64,12 +55,14 @@ body {
   width: 100%;
   height: auto;
   z-index: 100;
-  
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
- 
   animation: scroll 0.7s ease-in;
+  @include max-screen($mobile-phone){
+       max-width: 100%;
+
+    } 
 
 } 
 
@@ -91,12 +84,15 @@ body {
 .body__container {
   width: 100%;
   min-height: 100dvh;
-  overflow: hidden;
-   max-width: 1400px;
-
+  max-width: 1400px;
    margin: 0 auto;
    display: grid;
    place-items: center;
+   overflow-x: hidden;
+   @include max-screen($mobile-phone){
+      max-width:auto;
+
+   }
 }
 
 
