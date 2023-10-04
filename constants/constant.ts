@@ -18,6 +18,7 @@ import ProjectImg9 from "@/public/assets/images/project/helpscout.jpg"
 import projectImg10 from '@/public/assets/images/project/nike-project.jpg';
 import projectImg11 from '@/public/assets/images/project/famsecWebsite.jpg';
 import projectImg12 from '@/public/assets/images/project/resumeproj.jpg';
+import projectImg13 from '@/public/assets/images/project/weatherProject.jpg';
 
 import Imghtml from '@/public/assets/images/tech/html5.png';
 import Imgcss from '@/public/assets/images/tech/css3.png';
@@ -123,6 +124,19 @@ const technology :TechDataProps[]= [
     },
     {
       id: 5,
+      title: "weather app",
+      description:
+        "Built a sleek Weather App with Next.js, Tailwind CSS, and live weather data from a weather API",
+      poster: projectImg13,
+      tech1:'tailwindCss',
+      tech2: "nextjs ",
+      webLink: "https://weather-app-next-alpha.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/weather-app-next.git",
+      icon1: Imgtailwind,
+      icon2: Imgnext,
+    },
+    {
+      id: 6,
       title: "tech blog",
       description:
         "Tech blog! Built with Next.js , I utilized the efficiency of Sass and Tailwind CSS to bring you concise, cutting-edge content in a sleek and responsive design.",
@@ -140,7 +154,7 @@ const technology :TechDataProps[]= [
       icon3: Imgnext,
     },
     {
-      id: 6,
+      id: 7,
       title: "MovieFlix",
       description:
         "Create a seamless and captivating movie search website, MovieFlix, using Next.js and Tailwind CSS.  movie collection with a search bar powered by the OMDB API  ",
@@ -155,7 +169,7 @@ const technology :TechDataProps[]= [
        icon2:Imgnext,
     },
     {
-      id: 7,
+      id: 8,
       title: "Promising Startup",
       description:
         " Develop a captivating and responsive landing page using HTML, CSS, and JavaScript of the startup company, and driving conversions.",
@@ -170,7 +184,7 @@ const technology :TechDataProps[]= [
       icon3:Imgjs,
     },
     {
-      id: 8,
+      id: 9,
       title: "CineTop100",
       description:
         " Develop a feature-rich movie application  for exploring  cinematic gems ,Rapid API to fetch movie data, providing users with comprehensive details.",
@@ -185,7 +199,7 @@ const technology :TechDataProps[]= [
       icon3: Imgjs,
     },
     {
-      id: 9,
+      id: 10,
       title: "Sushi Restaurant",
       description:
         "Create a visually stunning and user-friendly website using React, showcasing the menu, services, and a contemporary sushi  japanese restaurant feel the taste",
@@ -199,7 +213,7 @@ const technology :TechDataProps[]= [
     },
   
     {
-      id: 10,
+      id: 11,
       title: "nike website",
       description:
         "I recreated the nike website using Next.js, TypeScript, SCSS, Tailwind CSS  and framer Motion as a practice project for web development.",
@@ -222,7 +236,7 @@ const technology :TechDataProps[]= [
   
    
     {
-      id:11,
+      id:12,
       title: "Metaverse nextjs ",
       description:
         "Metaverse UI, Designed with Next.js and enhanced by the versatility of Sass and the Tailwind CSS, this project serves as a perfect playground for  Next.js skills ",
@@ -239,7 +253,7 @@ const technology :TechDataProps[]= [
     },
    
     {
-      id: 12,
+      id: 13,
       title: "GPT3 Chat UI",
       description:
         " Develop a responsive website using React to provide users with an interactive and user-friendly interface for engaging in AI-driven conversations powered by GPT-3.",
